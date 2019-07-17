@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 .tube-section {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 1em;
   font-size: 1em;
 }
@@ -99,4 +99,14 @@ img {
 }
 .line-bakerloo {
   background-color: #894e24;
+}
+.tube-good {
+  color: green;
+}
+.tube-minor {
+  color: orange;
+}
+.tube-severe,
+.tube-part-suspended {
+  color: red;
 }
