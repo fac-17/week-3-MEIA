@@ -19,6 +19,11 @@ function request(url, cb, cors){
   xhr.send();
 }
 
+
+
 // request("https://corporatebs-generator.sameerkumar.website/",function (response){
 //   console.log(response);
 // });
+module.exports = {
+
+}
