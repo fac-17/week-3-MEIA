@@ -1,5 +1,14 @@
 .sentence{
   background-color: red;
   width: 500px;
+  height: 20px;
+  position: relative;
+}
+
+.image{
+  background-color: pink;
+  width: 100px;
   height: 200px;
+  position: absolute;
+  z-index: -1;
 }
