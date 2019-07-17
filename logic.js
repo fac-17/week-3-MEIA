@@ -1,5 +1,12 @@
 //API URL and Callback abstraction
-function request(url, cb){
+// url - string with url
+// cb is function given result
+// cors is Boolean, if true then use CORS proxy
+
+function request(url, cb, cors){
+    if (cors){
+        url="https://cors-anywhere.herokuapp.com/"+url;
+    }
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
