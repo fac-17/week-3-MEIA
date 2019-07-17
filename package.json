@@ -1,0 +1,27 @@
+{
+  "name": "week-3-MEIA",
+  "version": "1.0.0",
+  "description": "API Project",
+  "main": "feature-meme.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-17/week-3-MEIA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-17/week-3-MEIA/issues"
+  },
+  "homepage": "https://github.com/fac-17/week-3-MEIA#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
