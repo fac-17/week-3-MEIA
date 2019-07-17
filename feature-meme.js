@@ -1,3 +1,6 @@
-request("https://www.metaweather.com/api/location/44418/",function (response){
-  console.log(response);
-},true);
+request("https://corporatebs-generator.sameerkumar.website/", function(response) {
+  const sentence = document.querySelector('.sentence');
+  let p = document.createElement('p')
+  p.textContent = JSON.stringify(response.phrase)
+  sentence.appendChild(p);
+});
