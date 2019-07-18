@@ -18,7 +18,3 @@ function request(url, cb, cors){
   xhr.open("GET", url, true);
   xhr.send();
 }
-
-// request("https://corporatebs-generator.sameerkumar.website/",function (response){
-//   console.log(response);
-// });
