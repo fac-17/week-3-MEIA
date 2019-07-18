@@ -33,21 +33,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .tube-section {
   font-family: "Open Sans", sans-serif;
   padding: 1em;
   font-size: 1em;
 }
+
 .tube-line-ul {
   display: flex;
   flex-direction: column;
   border: 0.1em solid black;
 }
+
 .tube-line-li {
   display: flex;
   border-bottom: 1px solid grey;
   min-height: 3.5em;
 }
+
 .tube-line-name,
 .tube-line-status {
   display: flex;
@@ -56,83 +60,100 @@ img {
   width: 50%;
   padding: 0.5em;
 }
+
 .tube-line-status {
   color: inherit;
   justify-content: center;
 }
+
 .tube-line-shadow {
   color: black;
   text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
 }
+
 .line-bakerloo {
   background-color: #894e24;
 }
+
 .line-central {
   background-color: #dc241f;
 }
+
 .line-circle {
   background-color: #ffce00;
 }
+
 .line-district {
   background-color: #007229;
 }
+
 .line-hammersmith-city {
   background-color: #d799af;
 }
+
 .line-jubilee {
   background-color: #6a7278;
 }
+
 .line-metropolitan {
   background-color: #751056;
 }
+
 .line-northern {
   background-color: #000000;
 }
+
 .line-piccadilly {
   background-color: #0019a8;
 }
+
 .line-victoria {
   background-color: #00a0e2;
 }
+
 .line-waterloo-city {
   background-color: #76d0bd;
 }
+
 .line-bakerloo {
   background-color: #894e24;
 }
+
 .tube-good {
   color: green;
 }
+
 .tube-minor {
   color: orange;
 }
+
 .tube-severe,
 .tube-part {
   color: red;
 }
 
 .tube-reason {
-  transition: all 1s ;
+  transition: all 1s;
   max-height: 666px;
 }
+
 .reason-text {
   padding: 0.5em;
 }
+
 .tube-shrunk-reason {
   max-height: 0;
   overflow-y: hidden;
 }
 
-
-
-  .sentence{
+.sentence {
   background-color: red;
   width: 500px;
   height: 20px;
   position: relative;
 }
 
-.image{
+.image {
   background-color: pink;
   width: 100px;
   height: 200px;
