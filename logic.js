@@ -33,9 +33,21 @@ const shadowedNames = [
 function requiresShadow(lineID){
   return shadowedNames.includes(lineID);
 }
+
+
+function getTimeOfDay(hour){
+  if (hour > 5 && hour < 12)  return "Morning";
+  if (hour > 11 && hour < 18) return "Afternoon";
+  if (hour > 17 && hour < 22) return "Evening";
+  return "Night"
+}
+
+
+
+
 // request("https://corporatebs-generator.sameerkumar.website/",function (response){
 //   console.log(response);
 // });
 if (typeof module !== "undefined") {
-  module.exports = { getStatusClass, requiresShadow };
+  module.exports = { getStatusClass, requiresShadow, getTimeOfDay };
 }
