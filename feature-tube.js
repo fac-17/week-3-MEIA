@@ -9,17 +9,26 @@ request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
   ul.classList.add("tube-line-ul");
   response.forEach(line => {
     let shadow = shadowedNames.includes(line.id) ? "tube-line-shadow" : "";
-    let statusSeverityDescription =
-      line.lineStatuses[0].statusSeverityDescription;
+    const status=line.lineStatuses[0];
+    let statusSeverityDescription =status.statusSeverityDescription;
+    const reason=status.reason;
     //gets status class from helper function
     let statusClass = getStatusClass(statusSeverityDescription);
     let li = document.createElement("li");
     li.classList.add("tube-line-li");
     li.innerHTML = `
     <span class="tube-line-name line-${line.id} ${shadow}">${line.name}</span>
-    <span class="tube-line-status ${statusClass}">${statusSeverityDescription}
+    <span class="tube-line-status ${statusClass}">${statusSeverityDescription}</span>
     `;
     ul.appendChild(li);
+    if (reason){
+      const reasonLi=document.createElement('li');
+      reasonLi.innerHTML=`<p class="reason-text">${reason}</p>`;
+      reasonLi.classList.add('tube-reason');
+      reasonLi.classList.add('tube-shrunk-reason');
+
+      ul.appendChild(reasonLi)
+    }
   });
   let section = document.querySelector(".tube-section");
   section.innerHTML = "";
@@ -27,5 +36,5 @@ request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
   title.textContent = "Tube Status";
   section.appendChild(title);
   section.appendChild(ul);
-  console.log(response);
+  // console.log(response);
 });
