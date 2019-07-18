@@ -114,11 +114,14 @@ img {
 .tube-reason {
   transition: all 1s ;
   max-height: 666px;
+  border-bottom: 1px solid grey;
 }
 .reason-text {
+  
   padding: 0.5em;
 }
 .tube-shrunk-reason {
+  border: none;
   max-height: 0;
   overflow-y: hidden;
 }
