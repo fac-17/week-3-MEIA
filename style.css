@@ -35,17 +35,18 @@ img {
 }
 
 body {
-  background-color: #d799af;
+  background-color: #C3B7BC;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section {
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
   max-width: 800px;
-  margin:0.5rem;
+  margin: 0.5rem;
 }
 
 .wrapper {
@@ -54,10 +55,26 @@ section {
 }
 
 .intro-section {
-  flex-grow:1;
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
+
+.intro {
+  padding: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro-smallTitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  align-self: flex-start;
+}
+
+.intro-text {
+  font-family: "Open Sans", sans-serif;
+}
+
 .tube-section {
   font-family: "Open Sans", sans-serif;
   padding: 1em;
@@ -82,7 +99,6 @@ section {
   padding: 0.5em;
   border-radius: 0.5em;
   margin-bottom: 0.5em;
-
 }
 
 .tube-line-status {
@@ -150,16 +166,16 @@ section {
 }
 
 .tube-minor {
-  background-color:orange;
-  color:black;
-  border:none;
+  background-color: orange;
+  color: black;
+  border: none;
 }
 
 .tube-severe,
 .tube-part {
-  background-color:#dc241f;
+  background-color: #dc241f;
   color: white;
-  border:none;
+  border: none;
 }
 
 .tube-reason {
@@ -167,7 +183,6 @@ section {
 }
 
 .reason-text {
-
   padding: 0.5em;
 }
 
@@ -185,8 +200,8 @@ section {
 
 .sentence {
   position: absolute;
-  left:0; 
-} 
+  left: 0;
+}
 
 .sentence p {
   font-family: "Open Sans", sans-serif;
@@ -205,27 +220,22 @@ section {
   border-radius: 1rem;
 }
 
-
-.intro {
-  padding: 1em;
-  font-family: sans-serif;
-}
-
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
   .tube-section {
     max-width: 800px;
   }
- }
+}
 
-@media only screen and (min-width: 900px){
- body {
-   padding: 2rem;
- }
- section {
+@media only screen and (min-width: 900px) {
+  body {
+    padding: 2rem;
+  }
 
-   max-width: 400px;
- }
- .tube-section {
-   max-width: 400px;
- }
+  section {
+    max-width: 400px;
+  }
+
+  .tube-section {
+    max-width: 400px;
+  }
 }
