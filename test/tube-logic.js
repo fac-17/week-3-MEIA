@@ -22,3 +22,19 @@ tape("Check if getStatusClass returns correct class name", t => {
   t.equal(logic.getStatusClass("Severe Delays"), "tube-severe");
   t.end();
 });
+
+tape("Check if requiresShadow returns a boolean", t => {
+  t.equal(typeof logic.requiresShadow(""), 'boolean')
+  t.end();
+});
+
+tape("Check if requiresShadow returns false for the non shadowed input", t => {
+  t.equal(logic.requiresShadow("central"), false);
+  t.equal(logic.requiresShadow("piccadilly"), false);
+  t.end();
+});
+tape("Check if requiresShadow returns true for the shadowed input", t => {
+  t.equal(logic.requiresShadow("circle"), true);
+  t.equal(logic.requiresShadow("victoria"), true);
+  t.end();
+});
