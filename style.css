@@ -163,9 +163,6 @@ section {
 }
 
 .tube-reason {
-  transition: all 0.5 s ;
-  transition-timing-function: ease-in-out;
-  max-height: 400px;
   overflow-y: hidden;
 }
 
