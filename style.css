@@ -41,12 +41,12 @@ img {
 .tube-line-ul {
   display: flex;
   flex-direction: column;
-  border: 0.1em solid black;
+  /* border: 0.1em solid black; */
 }
 .tube-line-li {
   display: flex;
-  border-bottom: 1px solid grey;
-  min-height: 3.5em;
+  /* border-bottom: 1px solid grey; */
+  /* min-height: 3.5em; */
 }
 .tube-line-name,
 .tube-line-status {
@@ -55,10 +55,15 @@ img {
   color: white;
   width: 50%;
   padding: 0.5em;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+
 }
 .tube-line-status {
   color: inherit;
   justify-content: center;
+  border: 1px solid green;
+  margin-left: 0.5em;
 }
 .tube-line-shadow {
   color: black;
@@ -104,17 +109,24 @@ img {
   color: green;
 }
 .tube-minor {
-  color: orange;
+  background-color:orange;
+  color:black;
+  border:none;  
+  /* border-color: #1f3e93; */
 }
 .tube-severe,
 .tube-part {
-  color: red;
+  background-color:#dc241f;
+  color: white;
+  border:none;
 }
 
 .tube-reason {
   transition: all 1s ;
-  max-height: 666px;
-  border-bottom: 1px solid grey;
+  transition-timing-function: ease-in;
+  max-height: 600px;
+  /* border-bottom: 1px solid grey; */
+  overflow-y: hidden;
 }
 .reason-text {
   
@@ -123,7 +135,6 @@ img {
 .tube-shrunk-reason {
   border: none;
   max-height: 0;
-  overflow-y: hidden;
 }
 
 

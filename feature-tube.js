@@ -12,6 +12,8 @@ request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
     const status = line.lineStatuses[0];
     let statusSeverityDescription = status.statusSeverityDescription;
     const reason = status.reason;
+    if (line.id=="jubilee")
+     statusSeverityDescription="Severe Delays";
     //gets status class from helper function
     let statusClass = getStatusClass(statusSeverityDescription);
     let li = document.createElement("li");
