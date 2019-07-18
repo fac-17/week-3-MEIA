@@ -20,7 +20,7 @@ function request(url, cb, cors) {
 }
 
 function getStatusClass(severityString) {
-  return "";
+  return "tube-" + severityString.split(" ")[0].toLowerCase();
 }
 
 // request("https://corporatebs-generator.sameerkumar.website/",function (response){
