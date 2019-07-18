@@ -34,6 +34,18 @@ img {
   height: auto;
 }
 
+body {
+  background-color: #d799af;
+}
+section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  max-width: 900px;
+  margin:1rem;
+}
+
 .tube-section {
   font-family: "Open Sans", sans-serif;
   padding: 1em;
@@ -164,13 +176,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* position: relative; */
+  position: relative;
 }
-
-.sentence {
-  position: absolute;
-}
-
+/* 
 .sentence p {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -184,6 +192,32 @@ img {
 .image {
   background-size: cover;
   padding: 1em;
-  /* position: relative; */
   z-index: -1;
+}
+*/
+.sentence {
+  position: absolute;
+} 
+
+.sentence p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -webkit-text-stroke: 0.1rem #000;
+  text-align: center;
+}
+
+.image {
+  background-size: cover;
+  padding: 1em;
+  /* z-index: -1; */
+}
+
+
+.intro {
+  padding: 1em;
+  font-family: sans-serif;
 }
