@@ -1,5 +1,5 @@
 # Week 3 API Project: Team MEIA 
-![Imgur](https://i.imgur.com/Y36JKi1.png)
+![Imgur](https://i.imgur.com/CHxLH72.png)
 ## Team
 -  [Jan](https://github.com/crianonim)
 -  [Sarah](https://github.com/sarahyjja)
