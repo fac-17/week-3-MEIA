@@ -35,7 +35,7 @@ img {
 }
 
 body {
-  background-color: #d799af;
+  background-color: #C3B7BC;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,6 +59,24 @@ section {
   display: flex;
   align-items: center;
 }
+
+.intro {
+  padding: 1em;
+  font-family:  "Open Sans", sans-serif;
+}
+
+.intro-smallTitle{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+    align-self: flex-start;
+
+}
+.intro-text{
+  font-family: "Open Sans", sans-serif;
+  /* text-align: center; */
+
+}
+
 .tube-section {
   font-family: "Open Sans", sans-serif;
   padding: 1em;
@@ -191,7 +209,7 @@ section {
 
 .sentence {
   position: absolute;
-} 
+}
 
 .sentence p {
   font-family: "Open Sans", sans-serif;
@@ -207,12 +225,6 @@ section {
 .image {
   background-size: cover;
   border-radius: 1rem;
-}
-
-
-.intro {
-  padding: 1em;
-  font-family: sans-serif;
 }
 
 @media only screen and (min-width: 600px){
