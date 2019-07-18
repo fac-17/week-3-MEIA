@@ -45,9 +45,7 @@ function getTimeOfDay(hour){
 
 
 
-// request("https://corporatebs-generator.sameerkumar.website/",function (response){
-//   console.log(response);
-// });
+
 if (typeof module !== "undefined") {
   module.exports = { getStatusClass, requiresShadow, getTimeOfDay };
 }

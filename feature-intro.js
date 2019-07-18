@@ -7,11 +7,8 @@ const introText = document.querySelector('.intro-text');
 
 const date = new Date();
 const hours = date.getHours();
-// const minutes = date.getMinutes();
-// const day = date.getDay();
-// const month = date.getMonth();
+
 const dateString = date.toLocaleDateString();
-// const dateString2 =date.toDateString();
 const timeString = date.toTimeString().substr(0,5)
 const timeOfDay =  getTimeOfDay(hours);
 
