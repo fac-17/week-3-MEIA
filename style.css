@@ -146,17 +146,30 @@ img {
   overflow-y: hidden;
 }
 
+.meme-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* position: relative; */
+}
+
 .sentence {
-  background-color: red;
-  width: 500px;
-  height: 20px;
-  position: relative;
+  position: absolute;
+}
+
+.sentence p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #fff;
+  padding: 2em;
+  -webkit-text-stroke: 0.1rem #000;
+  text-align: center;
 }
 
 .image {
-  background-color: pink;
-  width: 100px;
-  height: 200px;
-  position: absolute;
+  background-size: cover;
+  padding: 1em;
+  /* position: relative; */
   z-index: -1;
 }
