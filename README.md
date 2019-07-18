@@ -1,5 +1,12 @@
 # Week 3 API Project: Team MEIA 
+Desktop
+
 ![Imgur](https://i.imgur.com/CHxLH72.png)
+
+Mobile
+
+![Imgur](https://i.imgur.com/sY8Mzfq.gif)
+
 ## Team
 -  [Jan](https://github.com/crianonim)
 -  [Sarah](https://github.com/sarahyjja)
