@@ -24,6 +24,9 @@ function request(url, cb, cors){
 // request("https://corporatebs-generator.sameerkumar.website/",function (response){
 //   console.log(response);
 // });
-module.exports = {
+if (typeof module!=="undefined"){
 
+  module.exports = {
+    
+  }
 }
