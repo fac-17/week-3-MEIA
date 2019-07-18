@@ -40,13 +40,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section {
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
- /* min-width: 300px; */
   max-width: 800px;
-  margin:0.5rem;
+  margin: 0.5rem;
 }
 
 .wrapper {
@@ -55,26 +55,24 @@ section {
 }
 
 .intro-section {
-  flex-grow:1;
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
 
 .intro {
   padding: 1em;
-  font-family:  "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.intro-smallTitle{
+.intro-smallTitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-    align-self: flex-start;
-
+  font-size: 1.5em;
+  align-self: flex-start;
 }
-.intro-text{
-  font-family: "Open Sans", sans-serif;
-  /* text-align: center; */
 
+.intro-text {
+  font-family: "Open Sans", sans-serif;
 }
 
 .tube-section {
@@ -101,7 +99,6 @@ section {
   padding: 0.5em;
   border-radius: 0.5em;
   margin-bottom: 0.5em;
-
 }
 
 .tube-line-status {
@@ -169,29 +166,23 @@ section {
 }
 
 .tube-minor {
-  background-color:orange;
-  color:black;
-  border:none;
-  /* border-color: #1f3e93; */
+  background-color: orange;
+  color: black;
+  border: none;
 }
 
 .tube-severe,
 .tube-part {
-  background-color:#dc241f;
+  background-color: #dc241f;
   color: white;
-  border:none;
+  border: none;
 }
 
 .tube-reason {
-  transition: all 1s ;
-  transition-timing-function: ease-in;
-  max-height: 600px;
-  /* border-bottom: 1px solid grey; */
   overflow-y: hidden;
 }
 
 .reason-text {
-
   padding: 0.5em;
 }
 
@@ -209,6 +200,7 @@ section {
 
 .sentence {
   position: absolute;
+  left: 0;
 }
 
 .sentence p {
@@ -216,10 +208,11 @@ section {
   font-weight: 800;
   font-size: 1.5rem;
   color: #fff;
-  padding: 0.5em;
+  padding: 1rem;
   margin-bottom: 1em;
   -webkit-text-stroke: 0.1rem #000;
   text-align: center;
+  max-width: 100%;
 }
 
 .image {
@@ -227,19 +220,22 @@ section {
   border-radius: 1rem;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
   .tube-section {
     max-width: 800px;
   }
- }
+}
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
+  body {
+    padding: 2rem;
+  }
 
- section {
+  section {
+    max-width: 400px;
+  }
 
-   max-width: 400px;
- }
- .tube-section {
-   max-width: 400px;
- }
+  .tube-section {
+    max-width: 400px;
+  }
 }
