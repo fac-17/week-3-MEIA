@@ -23,9 +23,19 @@ function getStatusClass(severityString) {
   return "tube-" + severityString.split(" ")[0].toLowerCase();
 }
 
+const shadowedNames = [
+  "hammersmith-city",
+  "circle",
+  "victoria",
+  "waterloo-city"
+];
+
+function requiresShadow(lineID){
+  return shadowedNames.includes(lineID);
+}
 // request("https://corporatebs-generator.sameerkumar.website/",function (response){
 //   console.log(response);
 // });
 if (typeof module !== "undefined") {
-  module.exports = { getStatusClass };
+  module.exports = { getStatusClass, requiresShadow };
 }

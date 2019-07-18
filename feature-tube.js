@@ -1,17 +1,12 @@
-const shadowedNames = [
-  "hammersmith-city",
-  "circle",
-  "victoria",
-  "waterloo-city"
-];
 request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
   const ul = document.createElement("ul");
   ul.classList.add("tube-line-ul");
   response.forEach(line => {
-    let shadow = shadowedNames.includes(line.id) ? "tube-line-shadow" : "";
-    const status=line.lineStatuses[0];
-    let statusSeverityDescription =status.statusSeverityDescription;
-    const reason=status.reason;
+    let shadow = requiresShadow(line.id) ? "tube-line-shadow" : "";
+    const status = line.lineStatuses[0];
+    let statusSeverityDescription = status.statusSeverityDescription;
+    const reason = status.reason;
+    // if (line.id=="jubilee") statusSeverityDescription="Severe Delays";
     //gets status class from helper function
     let statusClass = getStatusClass(statusSeverityDescription);
     let li = document.createElement("li");
@@ -21,13 +16,15 @@ request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
     <span class="tube-line-status ${statusClass}">${statusSeverityDescription}</span>
     `;
     ul.appendChild(li);
-    if (reason){
-      const reasonLi=document.createElement('li');
-      reasonLi.innerHTML=`<p class="reason-text">${reason}</p>`;
-      reasonLi.classList.add('tube-reason');
-      reasonLi.classList.add('tube-shrunk-reason');
-
-      ul.appendChild(reasonLi)
+    if (reason) {
+      const reasonLi = document.createElement("li");
+      reasonLi.innerHTML = `<p class="reason-text">${reason}</p>`;
+      reasonLi.classList.add("tube-reason");
+      reasonLi.classList.add("tube-shrunk-reason");
+      ul.appendChild(reasonLi);
+      li.addEventListener('click', (e)=>{
+        reasonLi.classList.toggle("tube-shrunk-reason");
+      });
     }
   });
   let section = document.querySelector(".tube-section");
@@ -36,5 +33,4 @@ request("https://api.tfl.gov.uk/line/mode/tube/status", function(response) {
   title.textContent = "Tube Status";
   section.appendChild(title);
   section.appendChild(ul);
-  // console.log(response);
 });
