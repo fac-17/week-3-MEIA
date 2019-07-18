@@ -11,7 +11,7 @@ A simple web app (ideally just a single page) that queries at least two APIs and
 
 ## Concept
 
-Trainspiraton 
+#### Trainspiraton 
 
 :train: London is one of the world's leading business centres with a public transport network to match. Business and travel, trains and inspiration; get a daily dose of wisdom live from trainspiration. :chart:
 
@@ -34,7 +34,7 @@ We want to create a useful web app that tells users:
 - We first decided on which apis to use, we were looking for APIs that had high or no response limits, and no api keys.
 - Then we decided to abstract away our XMLHttpRequest functionality into a single reusable function, inside a logic.js file.
 
-![mind blown gif](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
+  ![mind blown gif](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
 
 - This function was then used for each of our api calls, inside separate feature-*.js files
 - The tfl api call has a few helper functions, to add the necessary classes to change css based on line status
