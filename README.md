@@ -9,6 +9,12 @@
 A simple web app (ideally just a single page) that queries at least two APIs and uses the results to update the DOM.
 ![fun fun fun gif](https://media.giphy.com/media/XOXdQszYm4I3m/giphy.gif)
 
+## Concept
+
+Trainspiraton 
+
+:train: London is one of the world's leading business centres with a public transport network to match. Business and travel, trains and inspiration; get a daily dose of wisdom live from trainspiration. :chart:
+
 ## User Stories
 We want to create a useful web app that tells users:
 * the time and date 
@@ -39,9 +45,8 @@ We want to create a useful web app that tells users:
 ## Problems
 
 * Initially we were going to use the weather API and have TFL API as a stretch goal, but we switched the two around after running into problems with the weather API. 
-* The weather API had a very low request limit, and we struggled to find a non-limited weather api, which wasted like an hour, eventually gave up on displaying the weather.
-![make it stop gif](https://media.giphy.com/media/ERMGXqtKTDKHC/giphy.gif)
-
+* The weather API had a very low request limit, and we struggled to find a non-limited weather api, which wasted like an hour, eventually gave up on displaying the weather.  
+![make it stop gif](https://media.giphy.com/media/ERMGXqtKTDKHC/giphy.gif)  
 * Towards the end of the build we wanted to use grid to structure the elements on the page, but scrapped this after realising that flex and flex-wrap was a better and simpler way to organise everything (as we didn't sketch out the element sizings from the outset) 
 
 
