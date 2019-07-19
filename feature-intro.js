@@ -9,10 +9,16 @@ const date = new Date();
 const hours = date.getHours();
 
 const dateString = date.toLocaleDateString();
-const timeString = date.toTimeString().substr(0,5)
 const timeOfDay =  getTimeOfDay(hours);
 
 introTitle.textContent = `Good ${timeOfDay}! `;
 introDate.textContent = `Today is ${dateString}`;
-introTime.textContent = `It's ${timeString}`;
 
+function upDateTime(){
+  const date = new Date();
+  const timeString = date.toTimeString().substr(0, 8);
+  introTime.textContent = `It's ${timeString}`;
+}
+
+setInterval(upDateTime, 1000);
+upDateTime();
