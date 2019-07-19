@@ -7,11 +7,13 @@ request(`https://picsum.photos/v2/list?page=${pages}&limit=100`, function(
   const random = Math.floor(Math.random() * 100);
   imageObj=response[random];
   image.src = imageObj.download_url;
+  let aspectRatio= imageObj.width/imageObj.height;
   //dont load really wide images and portrait images
-  while(imageObj.height/imageObj.width>0.7|| imageObj.width/imageObj.height > 1.8)
+  while(aspectRatio<(4/3)|| aspectRatio>(16/9))
   {
     imageObj=response[Math.floor(Math.random() * 100)];
     image.src = imageObj.download_url;
+    aspectRatio= imageObj.width/imageObj.height;
   }
     image.addEventListener("load", () => {
     request("https://corporatebs-generator.sameerkumar.website/", function(
