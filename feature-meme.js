@@ -11,7 +11,6 @@ request(`https://picsum.photos/v2/list?page=${pages}&limit=100`, function(
   //dont load really wide images and portrait images
   while(aspectRatio<(4/3)|| aspectRatio>(16/9))
   {
-    console.log('image rejected, reloading');
     imageObj=response[Math.floor(Math.random() * 100)];
     image.src = imageObj.download_url;
     aspectRatio= imageObj.width/imageObj.height;
