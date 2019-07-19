@@ -200,7 +200,8 @@ section {
 
 .sentence {
   position: absolute;
-  left: 0;
+  width: 100%;
+
 }
 
 .sentence p {
@@ -224,6 +225,7 @@ section {
   .tube-section {
     max-width: 800px;
   }
+ 
 }
 
 @media only screen and (min-width: 900px) {
