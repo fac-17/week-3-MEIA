@@ -15,7 +15,11 @@ Mobile
 ## Description 
 A simple web app (ideally just a single page) that queries at least two APIs and uses the results to update the DOM.
 ![fun fun fun gif](https://media.giphy.com/media/XOXdQszYm4I3m/giphy.gif)
-
+## Installation
+The Website is live on github pages, but if you want to run the tests, then follow these steps
+1. Clone this repo to your device
+2. type 'npm install' in the terminal to install testing dependencies
+3. type 'npm test' to run tests
 ## Concept
 
 #### Trainspiraton 
